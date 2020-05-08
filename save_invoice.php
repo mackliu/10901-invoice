@@ -1,4 +1,6 @@
 <?php
+$dsn="mysql:host=localhost;charset=utf8;dbname=invoice";
+
 
 echo "period=".$_POST['period']."<br>";
 echo "year=".$_POST['year']."<br>";
