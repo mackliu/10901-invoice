@@ -11,7 +11,7 @@
 <body>
 <?php include "./include/header.php"   ;
 $period=ceil(date("n")/2);
-echo $period;
+
 if(isset($_GET['period'])){
     $period=$_GET['period'];
 }
