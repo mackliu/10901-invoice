@@ -1,4 +1,4 @@
-<?php include "./com/base.php"    ;?>
+<?php include_once "./com/base.php"    ;?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,8 +29,8 @@ if(isset($_GET['period'])){
 </ul>
 <?php
 
-$sql="select * from invoice where period='$period'";
-$rows=$pdo->query($sql)->fetchAll();
+//$sql="select * from invoice where period='$period'";
+$rows=all('invoice',['period'=>$period]);
 
 ?>
 <table>
