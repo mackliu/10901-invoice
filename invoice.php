@@ -52,11 +52,21 @@ $num4=all('award_number',['period'=>$period,'year'=>$year,'type'=>4]);//多筆
     </tr>
     <tr>
         <td>特別獎</td>
-        <td><?=$num1['number'];?></td>
+        <td><?php
+        if(!empty($num1['number'])){
+            echo $num1['number'];
+        };
+        
+        ?></td>
     </tr>
     <tr>
         <td>特獎</td>
-        <td><?=$num2['number'];?></td>
+        <td><?php
+        if(!empty($num2['number'])){
+            echo $num2['number'];
+        };
+        
+        ?></td>
     </tr>
     <tr>
         <td>頭獎</td>
